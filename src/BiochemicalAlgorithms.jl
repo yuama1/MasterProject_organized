@@ -17,6 +17,7 @@ include("core/protein.jl")
 module PubChem
 include("fileformats/pubchem_json.jl")
 end
+include("fileformats/pdb.jl")
 
 include("mappings/atom_bijection.jl")
 include("mappings/rigid_mapping.jl")
