@@ -84,5 +84,5 @@ function interface5A(atoms::DataFrame, a::String, b::String)
         get_interface_residue_5A(atoms)  
 end
 
-interface(m::PDBMolecule, a::String, b::String) = interface5A(m.atoms, a::String, b::String)
+interface5A(m::PDBMolecule, a::String, b::String) = interface5A(m.atoms, a::String, b::String)
 interface5A(m::PDBMolecule) = interface5A(m.atoms, m.chains[1].name, m.chains[2].name)

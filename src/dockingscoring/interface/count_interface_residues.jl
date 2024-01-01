@@ -23,45 +23,45 @@ function count_interface_residues(interface::DataFrame)
         tyr::Int = 0
 
         for i in eachrow(interface)
-                if i[:residue_name] == "ALA"
+                if uppercase(i[:residue_name]) == "ALA"
                         ala += 1
-                elseif i[:residue_name] == "CYS"
+                elseif uppercase(i[:residue_name]) == "CYS"
                         cys += 1
-                elseif i[:residue_name] == "ASP"
+                elseif uppercase(i[:residue_name]) == "ASP"
                         asp += 1
-                elseif i[:residue_name] == "GLU"
+                elseif uppercase(i[:residue_name]) == "GLU"
                         glu += 1
-                elseif i[:residue_name] == "PHE"
+                elseif uppercase(i[:residue_name]) == "PHE"
                         phe += 1
-                elseif i[:residue_name] == "GLY"
+                elseif uppercase(i[:residue_name]) == "GLY"
                         gly += 1
-                elseif i[:residue_name] == "HIS"
+                elseif uppercase(i[:residue_name]) == "HIS"
                         his += 1
-                elseif i[:residue_name] == "ILE"
+                elseif uppercase(i[:residue_name]) == "ILE"
                         ile += 1
-                elseif i[:residue_name] == "LYS"
+                elseif uppercase(i[:residue_name]) == "LYS"
                         lys += 1
-                elseif i[:residue_name] == "LEU"
+                elseif uppercase(i[:residue_name]) == "LEU"
                         leu += 1
-                elseif i[:residue_name] == "MET"
+                elseif uppercase(i[:residue_name]) == "MET"
                         met += 1
-                elseif i[:residue_name] == "ASN"
+                elseif uppercase(i[:residue_name]) == "ASN"
                         asn += 1
-                elseif i[:residue_name] == "PRO"
+                elseif uppercase(i[:residue_name]) == "PRO"
                         pro += 1
-                elseif i[:residue_name] == "GLN"
+                elseif uppercase(i[:residue_name]) == "GLN"
                         gln += 1
-                elseif i[:residue_name] == "ARG"
+                elseif uppercase(i[:residue_name]) == "ARG"
                         arg += 1
-                elseif i[:residue_name] == "SER"
+                elseif uppercase(i[:residue_name]) == "SER"
                         ser += 1
-                elseif i[:residue_name] == "THR"
+                elseif uppercase(i[:residue_name]) == "THR"
                         thr += 1
-                elseif i[:residue_name] == "VAL"
+                elseif uppercase(i[:residue_name]) == "VAL"
                         val += 1
-                elseif i[:residue_name] == "TRP"
+                elseif uppercase(i[:residue_name]) == "TRP"
                         trp += 1
-                elseif i[:residue_name] == "TYR"
+                elseif uppercase(i[:residue_name]) == "TYR"
                         tyr += 1
                 end
         end

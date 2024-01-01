@@ -26,11 +26,18 @@ using .PubChem
 
 export load_pubchem_json
 
-include("docking_results_scoring/sasa/atomic_radius.jl")
-include("docking_results_scoring/sasa/hashbox.jl")
-include("docking_results_scoring/sasa/sasa.jl")
+include("dockingscoring/sasa/atomic_radius.jl")
+include("dockingscoring/sasa/hashbox.jl")
+include("dockingscoring/sasa/sasa.jl")
 
-include("docking_results_scoring/interface/interface.jl")
-include("docking_results_scoring/interface/interface5A.jl")
+include("dockingscoring/interface/interface.jl")
+include("dockingscoring/interface/interface5A.jl")
+include("dockingscoring/interface/residue_residue_pair.jl")
+include("dockingscoring/interface/count_interface_residues.jl")
+include("dockingscoring/interface/count_residue_areas.jl")
+include("dockingscoring/interface/count_interface_residue_pairs.jl")
 
+include("dockingscoring/scoring_function/extractResiduePairsFromPDB.jl")
+include("dockingscoring/scoring_function/extractResidueCountsFromPDB.jl")
+include("dockingscoring/scoring_function/extractResidueAreasFromPDB.jl")
 end
