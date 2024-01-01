@@ -26,4 +26,11 @@ using .PubChem
 
 export load_pubchem_json
 
+include("docking_results_scoring/sasa/atomic_radius.jl")
+include("docking_results_scoring/sasa/hashbox.jl")
+include("docking_results_scoring/sasa/sasa.jl")
+
+include("docking_results_scoring/interface/interface.jl")
+include("docking_results_scoring/interface/interface5A.jl")
+
 end
